@@ -1,13 +1,32 @@
 
 
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0px;
+  font-family: Arial, sans-serif;
+  background-color: #B0B0AE;
+  color: #333;
+  /* Убираем padding */
+  
 }
 
 .nav-bar {
-  background-color: lightpink;
-  min-height: 60px;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.nav-bar {
+
   display: flex;
+  background-color: #004D99;
+  min-height: 60px;
+  
   justify-content: center;
   align-items: center;
   gap: 24px;
@@ -29,6 +48,7 @@ body {
   flex-wrap: wrap;
   list-style: none;
   gap: 24px;
+  padding: 0px;
 }
 
 .product-card {
@@ -38,8 +58,40 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 18px;
 }
 
 .product-card > img {
   width: 80%;
 }
+
+
+.product-card button {
+  margin: 8px 4px 0;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+  opacity: 0.9;
+}
+
+.product-card button:first-of-type {
+  background-color: #e5a69f;
+  color: white;
+}
+
+.product-card button:nth-of-type(2) {
+  background-color: #6794b2;
+  color: white;
+}
+
+
+
+
+
+

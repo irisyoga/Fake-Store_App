@@ -1,3 +1,4 @@
+
 const registerForm = document.getElementById("register-form");
 const messageEl = document.getElementById("message");
 

@@ -88,22 +88,22 @@ async function fetchUpdateCategory(id, name, image, itemCard) {
   }
 }
 //Удаление категорий
-/*
+
 async function fetchDeleteCategory(id, itemCard) {
   const res = await fetch(`https://api.escuelajs.co/api/v1/categories/${id}`, {
- //  method: "DELETE",
-}); 
+    method: "DELETE",
+  });
   if (res.ok) {
     categoryList.removeChild(itemCard);
     //window.location.href = "/";//информация будет обновляться с перезагрузки страницы в браузере
-    
   }
-}*/
+}
+/*
 function fetchDeleteCategory(id, itemCard) {
   const element = document.getElementById("category-" + id);
   if (itemCard) {
     itemCard.remove();
   } 
-}  
+} */
 
 fetchCategories();

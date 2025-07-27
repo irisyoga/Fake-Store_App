@@ -48,7 +48,7 @@ async function fetchProducts() {
       <input type="text" name="price" placeholder="price" value="${price}">
       <button type="submit">Save</button>`;
 
-      Card.appendChild(form);
+      productCard.appendChild(form);
 
       form.addEventListener("submit", (event) => {
         event.preventDefault();
